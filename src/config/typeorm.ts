@@ -11,7 +11,8 @@ export async function connect() {
     password: "password",
     database: "graphqlts",
     entities: [
-      path.join(__dirname, '../entity/**/**.ts')
+      path.join(__dirname, '../entity/**/**.ts'),
+      path.join(__dirname, '../entity/**/**.js')
     ],
     synchronize: true
   });
